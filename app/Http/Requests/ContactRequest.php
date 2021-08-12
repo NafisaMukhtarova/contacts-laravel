@@ -25,7 +25,7 @@ class ContactRequest extends FormRequest
     {
         return [
             'contact_name' => 'required|min:2|max:50',
-            
+            'image'=> 'image',
             'contact_info' => 'required|min:3|max:100'
         ];
     }

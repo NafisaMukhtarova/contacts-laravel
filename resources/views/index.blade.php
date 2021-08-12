@@ -24,7 +24,7 @@
     <div class="row">
             <tr class="d-flex">
                 <td class="col-lg-2"> {{$el->contact_name}}</td>
-                    <td class="col-lg-1"></td>
+                    <td class="col-lg-1"> <img class="img-fluid" src= "storage/photos/{{$el->contact_photo}}">   </td>
                         <td class="col-lg-2">{{$el->contact_fullname}}</td>
                             <td class="col-lg-2">{{$el->contact_phone_number}}</td>
                                 <td class="col-lg-2">{{$el->contact_email}}</td>

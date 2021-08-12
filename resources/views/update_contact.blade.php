@@ -7,6 +7,15 @@
 
     <form action="{{ route('contact-update-submit',$data->id) }}" method="POST" enctype ="multipart/form-data">
             
+        <div class="row">
+            <div class="col-4 border border-primary">
+                    <p>Photo</p>
+                    <img src="/storage/photos/{{ $data->contact_photo }}" class="img-fluid" >
+                
+            </div>    
+
+            <div class="col-8">
+
             @csrf
                 <div class="mb-3">
                      <label for="contact_name" class="form-label">Name</label>
@@ -47,13 +56,15 @@
                  </div>    
                     
                  <div class="mb-3">
-                    <label for="image" class="form-label">Photo</label>
+                    <label for="image" class="form-label"> Change contacts photo: </label>
                      <input type="file" name = "image" id ="image">
                  </div>
                     
                
             
-            <button type="submit" class="btn btn-primary" > Изменить </button>
-        </form>
+                <button type="submit" class="btn btn-primary" > Изменить </button>
+            </div>
+        </div>
+    </form>
 
 @endsection
